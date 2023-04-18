@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Expense Calculator</h1>
+    <div class="container">
+      <h3 class="greet">
+        Welcome, <input type="text" placeholder="enter your name..." />
+      </h3>
+      <form>
+        <div class="double">
+          <div class="form-spending">
+            <label>Spending</label>
+            <input
+              id="spending"
+              type="text"
+              placeholder="enter the product.."
+            />
+          </div>
+          <div>
+            <div class="form-price">
+              <label>Price</label>
+              <input id="price" type="number" placeholder="enter the price.." />
+            </div>
+          </div>
+        </div>
+        <div class="double">
+          <div class="form-situation">
+            <input id="status-input" type="checkbox" />
+            <label for="status-input">Paid</label>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+      </form>
+
+      <!-- total expression -->
+      <div class="total">
+        total expenditure: <span id="total-information">0</span> &#8378;
+      </div>
+
+      <select id="filter-select">
+        <option value="all">All</option>
+        <option value="not-payed">Unpaid</option>
+        <option value="payed">Paid</option>
+      </select>
+
+      <!-- list -->
+      <div class="list"></div>
+    </div>
+
+    <!-- script binding -->
+    <script src="main.js"></script>
+  </body>
+</html>
